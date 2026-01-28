@@ -1,3 +1,6 @@
+# Command Center (Android) 📱
+
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badgelogo=androidlogoColor=white) ![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badgelogo=kotlinlogoColor=white) ![Status](https://img.shields.io/badge/Status-Stable-success?style=for-the-badge)
 # Command Center (Android) ��
 
 > **Status:** V1.0 (Stable)  
