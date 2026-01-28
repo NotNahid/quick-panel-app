@@ -1,0 +1,17 @@
+# 1. Heavy Tools (Ignore these!)
+jdk-17.0.2/
+sdk/
+gradle-8.2/
+gradle-8.2-bin.zip
+openjdk-17.0.2_linux-x64_bin.tar.gz
+
+# 2. Build Artifacts
+build/
+app/build/
+.gradle/
+local.properties
+
+# 3. IDE Files
+.idea/
+*.iml
+.DS_Store

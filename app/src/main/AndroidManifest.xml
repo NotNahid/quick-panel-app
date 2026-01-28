@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quicktiles">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application>
+        <service android:name=".NoteTileService" android:icon="@drawable/ic_terminal"
+            android:label="Command Center" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <activity android:name=".DashboardActivity" android:label="Command Center"
+            android:icon="@drawable/ic_terminal"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+            android:excludeFromRecents="true" android:launchMode="singleInstance" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FlashNoteActivity" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar" />
+        <activity android:name=".SysMonitorActivity" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar" />
+        <activity android:name=".NetStatActivity" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar" />
+    </application>
+</manifest>
